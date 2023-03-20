@@ -6,12 +6,12 @@ body {
 }
 
 header {
-	height: 80px;
+	height: 65px;
 	background-color: #333;
 	color: #ffffff;
 	padding: 5px;
 	border-style: solid;
-	border-color: #222;
+	border-color: #222;;
 }
 
 .logo img {
@@ -35,11 +35,13 @@ header h1 {
 	color: rgb(255, 255, 255);
 	display: inline-block;
 	margin: 0;
+	
 }
 
 nav {
+	margin-top: -80px;
 	float: right;
-	margin-top: 0;
+	
 }
 
 nav ul {
@@ -63,11 +65,24 @@ nav a {
 }
 
 main {
-	max-width: 1214px;
+	max-width: 1000px;
 	margin: auto;
-	float:inline-start;
 	background-color:#932f2f;
 }
+
+.container {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	width: 100%;
+}
+
+.promocaoImg {
+	width: 100%;
+}
+
+
+
 
 
 /*.botao {
@@ -95,6 +110,7 @@ main {
 .card img {
 	width: 100%;
 	height: auto;
+	border-radius: 10px;
 	display: block;
 	color: #fff;
 }

@@ -6,19 +6,18 @@ body {
 }
 
 header {
-	height: 65px;
 	background-color: #333;
 	color: #ffffff;
-	padding: 5px;
-	border-style: solid;
-	border-color: #222;;
+	/* Adiciona uma sombra preta com deslocamento horizontal de 4px, deslocamento vertical de 2px,
+   desfoque de 10px e sem expansão ou contração. */
+	box-shadow: 4px 2px 2px #000;
 }
 
 .logo img {
-	height: 75px;
+	height: 65px;
 	width: auto;
 	float: left;
-	margin-left: 230px;
+	margin-left: 160px;
 }
 
 
@@ -31,38 +30,13 @@ header h1 {
 	font-family: 'PT Sans', sans-serif;
 	font-family: 'Smooch Sans', sans-serif;
 	font-family: 'Staatliches';
-	font-size: 60px;
+	font-size: 46px;
 	color: rgb(255, 255, 255);
 	display: inline-block;
 	margin: 0;
 	
 }
 
-nav {
-	margin-top: -80px;
-	float: right;
-	
-}
-
-nav ul {
-	margin-top: 0;
-	padding: 0;
-	list-style: none;
-}
-
-nav li {
-	display: inline-block;
-	margin-right: 0;
-}
-
-nav li:first-child {
-	margin-left: 0;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
 
 main {
 	max-width: 1000px;

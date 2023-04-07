@@ -1,90 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body {
+	background-color: #a1bfd8;
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 5px;
-	margin-right: 250px;
-	margin-left: 250px;
-	border-radius: 100px;
+	height: 18vh;
+	display: flex;
+	justify-content: space-between;
+	background-color: #0060b1;
+	
+	/* Adiciona uma sombra preta com deslocamento horizontal de 4px, deslocamento vertical de 2px,
+   desfoque de 10px e sem expansão ou contração. */
+	box
 }
 
- header img {
-    height: 60px;
-    width: auto;
-	margin-top: -5px;
-    margin-left: 5px;
-  }
-  
-  /* Adicione um espaçamento para a esquerda do texto do título */
-  title {
-    padding-left: 40px;
-  }
+ul {
+	display: flex;
+	margin: 22px;
+}
+li {
+	color: rgb(255, 255, 255);
+	list-style-type: none;
+	cursor: pointer;
+	padding-left: 2rem;
 
-
- header h1 {
-font-family: 'Bebas Neue', cursive;
-font-family: 'Fredoka', sans-serif;
-font-family: 'Inspiration', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'PT Sans', sans-serif;
-font-family: 'Smooch Sans', sans-serif;
-font-family: 'Staatliches', cursive;
-	height: 1px;
-	margin-top: -60px;
-	margin-left:150px;
 }
 
-header h5 {
-	height: 1px;
-	margin-top: 30px;
-	margin-left: 145px;
+.logo img {
+	height: 65px;
+	width: auto;
+	float: left;
+	margin-left: 160px;
 }
 
-nav {
-	float: right;
-	margin-top: -35px;
-}
 
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-nav li {
+header h1 {
+	font-family: 'Bebas Neue';
+	font-family: 'Fredoka', sans-serif;
+	font-family: 'Inspiration';
+	font-family: 'Lato', sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Smooch Sans', sans-serif;
+	font-family: 'Staatliches';
+	font-size: 46px;
+	color: rgb(255, 255, 255);
 	display: inline-block;
-	margin-left: 20px;
+	margin: 0;
+
 }
 
-nav li:first-child {
-	margin-left: 0;
-}
-
-nav a {
-	color: #fff;
-	text-decoration: none;
-}
 
 main {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
+	max-width: 1000px;
+	margin: auto;
+	/*background-color:#932f2f;*/
 }
 
-section {
-	margin-bottom: 20px;
+
+.container {
+	margin-top: 50px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	width: 100%;
 }
 
-section h2 {
-	margin-top: 0;
+.promocaoImg {
+	width: 100%;
 }
 
-.botao {
+
+/*.botao {
 	display: inline-block;
 	background-color: #333;
 	color: #fff;
@@ -94,5 +87,60 @@ section h2 {
 }
 
 .botao:hover {
-	background-color: #666;
+	background-color: #ffffff;
+}
+*/
+.card {
+	width: 300px;
+	background-color: #333;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	display: inline-block;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	display: block;
+	color: #fff;
+}
+
+.card-info {
+	padding: 20px;
+}
+
+.card-info h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.card-info p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.card-info a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.card-info a:hover {
+	background-color: black;
+}
+
+.footer1 {
+	height: 4vh;
+	display: flex;
+	background-color: #ff6500;
+	font-size: 20px
 }

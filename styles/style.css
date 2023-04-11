@@ -4,61 +4,43 @@
 }
 
 body {
-	background-color: #a1bfd8;
+	background-color: #ebebeb;
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
 header {
-	height: 18vh;
+	height: 6vh;
 	display: flex;
-	justify-content: space-between;
-	background-color: #0060b1;
-	/* Adiciona uma sombra preta com deslocamento horizontal de 4px, deslocamento vertical de 2px,
-   desfoque de 10px e sem expansão ou contração. */
-}
-
-ul {
+	justify-content:space-between;
+	background-color: #000;
+}.logo {
 	display: flex;
-	margin: 22px;
-}
-li {
-	color: rgb(255, 255, 255);
-	list-style-type: none;
-	cursor: pointer;
-	padding-left: 2rem;
-
-}
-
-.logo img {
-	height: 65px;
+}.logo img {
+	height: 55px;
 	width: auto;
-	float: left;
-	margin-left: 160px;
-}
-
-
-header h1 {
-	font-family: 'Bebas Neue';
-	font-family: 'Fredoka', sans-serif;
-	font-family: 'Inspiration';
-	font-family: 'Lato', sans-serif;
-	font-family: 'PT Sans', sans-serif;
-	font-family: 'Smooch Sans', sans-serif;
-	font-family: 'Staatliches';
-	font-size: 46px;
+}.logo h1 {
 	color: rgb(255, 255, 255);
-	display: inline-block;
-	margin: 0;
-
 }
+
+.search-box {
+	
+}
+
+.header2 {
+	background-color: #787878;
+}.header2 ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/*
 
 
 main {
 	max-width: 1000px;
 	margin: auto;
-	/*background-color:#932f2f;*/
 }
 
 
@@ -74,20 +56,6 @@ main {
 	width: 100%;
 }
 
-
-/*.botao {
-	display: inline-block;
-	background-color: #333;
-	color: #fff;
-	padding: 10px 20px;
-	border-radius: 5px;
-	text-decoration: none;
-}
-
-.botao:hover {
-	background-color: #ffffff;
-}
-*/
 .container2 {
 	display: flex;
 	overflow: auto;
@@ -142,9 +110,10 @@ main {
 	background-color: black;
 }
 
-.footer1 {
+.cabecalho {
 	height: 4vh;
 	display: flex;
 	background-color: #ff6500;
 	font-size: 20px
 }
+*/

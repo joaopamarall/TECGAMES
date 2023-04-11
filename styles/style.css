@@ -25,7 +25,7 @@ header {
 }
 
 .search-box {
-	
+	display: flex;
 }
 
 .header2 {

@@ -15,10 +15,8 @@ header {
 	display: flex;
 	justify-content: space-between;
 	background-color: #0060b1;
-	
 	/* Adiciona uma sombra preta com deslocamento horizontal de 4px, deslocamento vertical de 2px,
    desfoque de 10px e sem expansão ou contração. */
-	box
 }
 
 ul {
@@ -68,8 +66,8 @@ main {
 	margin-top: 50px;
 	display: flex;
 	position: relative;
-	justify-content: center;
 	width: 100%;
+	scroll-snap-type: x mandatory;
 }
 
 .promocaoImg {
@@ -90,41 +88,47 @@ main {
 	background-color: #ffffff;
 }
 */
-.card {
+.container2 {
+	display: flex;
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+}
+.container2 .card {
 	width: 300px;
-	background-color: #333;
 	border-radius: 10px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
-	display: inline-block;
+	flex-shrink: 0;
+	scroll-snap-align: start;
 }
 
-.card img {
-	width: 100%;
+.container2 .card img {
+	width: 90%;
 	height: auto;
 	border-radius: 10px;
-	display: block;
-	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	filter: drop-shadow(
+		0 0 10px #121212
+	);
 }
 
-.card-info {
+.container2 .card-info {
 	padding: 20px;
 }
 
-.card-info h2 {
+.container2 .card-info h2 {
 	font-size: 24px;
 	margin-bottom: 10px;
 	color: #fff;
 }
 
-.card-info p {
+.container2 .card-info p {
 	font-size: 16px;
 	line-height: 1.5;
 	margin-bottom: 20px;
 	color: #fff;
 }
 
-.card-info a {
+.container2 .card-info a {
 	display: inline-block;
 	padding: 10px 20px;
 	background-color: #333;
@@ -134,7 +138,7 @@ main {
 	transition: background-color 0.3s ease;
 }
 
-.card-info a:hover {
+.container2 .card-info a:hover {
 	background-color: black;
 }
 

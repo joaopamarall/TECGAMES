@@ -17,18 +17,32 @@
 		</div>
 		<nav class="menu">
 			<ul>
-				<li><a href="Lancamento.html">Lançamento</a></li>
-				<li><a href="PcGamer.html">PC Gamer</a></li>
-				<li><a href="Perifericos.html">Periféricos</a></li>
-				<li><a href="OfertaDoDia.html">Oferta do dia</a></li>
+				<li><a href="#Lancamento.html">Lançamento</a></li>
+				<li><a href="#PcGamer.html">PC Gamer</a></li>
+				<li><a href="#Perifericos.html">Periféricos</a></li>
+				<li><a href="#OfertaDoDia.html">Oferta do dia</a></li>
 			</ul>
 		</nav>
-		<aside class="autenticacao">
-            <a href="#login">Login</a>
-            <a href="#registar" class="botao destaque">Registrar</a>
-        </aside>	
+		<div class="logoCarrinho">
+			<a href="carrinhoDeCompras.html" class="botao destaque" alt="logo">
+				<img src="/images/logoCarrinho.png">
+			</a>
+		</div>	
 	</header>
 	
- 
+	<footer>
+			<p class="rodape">TECGAMES &copy; 2023</p>
+	</footer>
+	<script>
+        window.onhashchange = function(e) {
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+            console.log(oldURL, newURL)
+            const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`)
+            const newLink = document.querySelector(`.menu a[href='#${newURL}']`)
+            oldLink && oldLink.classList.remove('selected')
+            newLink && newLink.classList.add('selected')
+        }
+    </script>
 </body>
 </html>

@@ -30,7 +30,7 @@ body {
 	background-color: rgb(116, 185, 255);
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content:space-around;
 	
 }
 
@@ -38,24 +38,27 @@ body {
 	text-decoration: none;
 	color: #000;
 	font-size: 1.2em;
-	padding: 13px 20px;
 }
 
 .logo {
 	display: flex;
-	flex-grow: 1;
 }
 
 .logo img {
 	margin: 0;
-	height: 60px;
+	height: 45px;
 }
 
 .menu {
-	flex-grow: 10;
+	flex-grow: 8;
 }
 
-.menu a:hover {
+.menu a {
+	padding: 13px 20px;
+}
+
+.menu a:hover,
+.menu a.selected {
 	background-color: #1098db;
 	color: #fff;
 }
@@ -72,25 +75,32 @@ body {
 	margin: 0px 20px;
 }
 
-.autenticacao {
-	flex-grow: 1;
+@media(max-width: 780px) {
+	.menu {
+		display: none;
+	}
 }
 
-.autenticacao .botao {
-	color: #000;
-	border-radius: 30px;
-	padding: 10px 25px;
-	margin-right: 10px;
+.logoCarrinho {
+	display: flex;
+	justify-content:flex-start;
 }
 
-.destaque {
-	background: rgb(207, 207, 10);
+.logoCarrinho a {
+	display: flex;
+}
+
+.logoCarrinho img {
+	height: 43px;
+	margin: 0;
+	padding: 0;
 	box-shadow: 2px 2px 1px 1px #000;
+	border-radius: 25px;
 }
 
-.destaque:active {
-   box-shadow: none; 
-}
+.logoCarrinho img:active {
+	box-shadow: none; 
+ }
 
 .rodape {
 	display: flex;

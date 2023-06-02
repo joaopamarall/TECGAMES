@@ -25,84 +25,117 @@ body {
 		'conteudo'
 		'rodape';
 }
-
-.cabecalho {
-	background-color: rgb(116, 185, 255);
-	display: flex;
-	align-items: center;
-	justify-content:space-around;
-	
-}
-
-.cabecalho a {
-	text-decoration: none;
-	color: #000;
-	font-size: 1.2em;
-}
-
-.logo {
-	display: flex;
-}
-
-.logo img {
-	margin: 0;
-	height: 45px;
-}
-
-.menu {
-	flex-grow: 8;
-}
-
-.menu a {
-	padding: 13px 20px;
-}
-
-.menu a:hover,
-.menu a.selected {
-	background-color: #1098db;
+  a {
 	color: #fff;
-}
+	text-decoration: none;
+	transition: 0.3s;
+  }
 
-.menu ul {
+  a:hover {
+	opacity: 0.7;
+  }
+
+  .logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+
+  .image-logo {
+	height: 50px;
+  }
+  .store-name {
+	font-size: 24px;
+  	text-transform: uppercase;
+  	letter-spacing: 4px;
+	margin-top: 9px;
+  }
+
+  nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+	background: rgb(116, 185, 255);
+  }
+
+  .nav-list {
 	list-style: none;
 	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-}
+  }
 
-.menu li {
-	margin: 0px 20px;
-}
+  .nav-list li {
+	letter-spacing: 3px;
+	margin-left: 32px;
+  }
 
-@media(max-width: 780px) {
-	.menu {
-		display: none;
+  .mobile-menu {
+	display: none;
+	cursor: pointer;
+  }
+
+  .mobile-menu div {
+	width: 32px;
+	height: 2px;
+	background: #fff;
+	margin: 8px;
+	transition: 0.3s;
+  }
+
+  @media (max-width: 999px) {
+	body {
+	  overflow-x: hidden;
 	}
-}
+	.nav-list {
+	  position: absolute;
+	  top: 8vh;
+	  right: 0;
+	  width: 50vw;
+	  height: 92vh;
+	  background: rgb(116, 185, 255);
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: space-around;
+	  transform: translateX(100%);
+	  transition: transform 0.3s ease-in;
+	}
+	.nav-list li {
+	  margin-left: 0;
+	  opacity: 0;
+	}
+	.mobile-menu {
+	  display: block;
+	}
+  }
 
-.logoCarrinho {
-	display: flex;
-	justify-content:flex-start;
-}
+  .nav-list.active {
+	transform: translateX(0);
+  }
 
-.logoCarrinho a {
-	display: flex;
-}
+  @keyframes navLinkFade {
+	from {
+	  opacity: 0;
+	  transform: translateX(50px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
 
-.logoCarrinho img {
-	height: 43px;
-	margin: 0;
-	padding: 0;
-	box-shadow: 2px 2px 1px 1px #000;
-	border-radius: 25px;
-}
+  .mobile-menu.active .line1 {
+	transform: rotate(-45deg) translate(-8px, 8px);
+  }
 
-.logoCarrinho img:active {
-	box-shadow: none; 
- }
+  .mobile-menu.active .line2 {
+	opacity: 0;
+  }
 
-.rodape {
+  .mobile-menu.active .line3 {
+	transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  .rodape {
 	display: flex;
 	justify-content: center;
 }

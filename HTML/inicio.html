@@ -9,39 +9,33 @@
 	<title>TECGAMES</title>
 </head>
 <body>
+	
 	<header class="cabecalho">
-
-		<a href="inicio.html" class="logo">
-			<img src="/images/logo2.png" alt="Logo">
-		</a>
 		<nav class="menu">
-			<ul>
-				<li><a href="#Lancamento.html">Lançamento</a></li>
-				<li><a href="#PcGamer.html">PC Gamer</a></li>
-				<li><a href="#Perifericos.html">Periféricos</a></li>
-				<li><a href="#OfertaDoDia.html">Oferta do dia</a></li>
+			<div class="logo">
+				<img src="/images/logo2.png" class="image-logo">
+				<a class="store-name" href="/HTML/inicio.html">TECGAMES</a>
+			</div>
+			<div class="mobile-menu">
+			  <div class="line1"></div>
+			  <div class="line2"></div>
+			  <div class="line3"></div>
+			</div>
+			<ul class="nav-list">
+				<li><a href="Lancamento.html">Lançamento</a></li>
+				<li><a href="PcGamer.html">PC Gamer</a></li>
+				<li><a href="Perifericos.html">Periféricos</a></li>
+				<li><a href="OfertaDoDia.html">Oferta do dia</a></li>
 			</ul>
 		</nav>
-		<div class="logoCarrinho">
-			<a href="carrinhoDeCompras.html" alt="logo">
-				<img src="/images/logoCarrinho.png">
-			</a>
-		</div>	 
 	</header>
 	
+	<main class="conteudo">
+		
+	</main>
 	<footer>
 			<p class="rodape">TECGAMES &copy; 2023</p>
 	</footer>
-	<script>
-        window.onhashchange = function(e) {
-            const oldURL = e.oldURL.split('#')[1]
-            const newURL = e.newURL.split('#')[1]
-            console.log(oldURL, newURL)
-            const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`)
-            const newLink = document.querySelector(`.menu a[href='#${newURL}']`)
-            oldLink && oldLink.classList.remove('selected')
-            newLink && newLink.classList.add('selected')
-        }
-    </script>
+	<script src="/javascript/script.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="/images/logo2.png" type="image/x-icon">
+	<link rel="icon" href="/images/logo1.png" type="image/x-icon">
 	<link rel="stylesheet" href="/styles/style.css">
 	<title>TECGAMES</title>
 </head>
@@ -13,7 +13,7 @@
 	<header class="cabecalho">
 		<nav class="menu">
 			<div class="logo">
-				<img src="/images/logo2.png" class="image-logo">
+				<img src="/images/logo1.png" class="image-logo">
 				<a class="store-name" href="/HTML/inicio.html">TECGAMES</a>
 			</div>
 			<div class="mobile-menu">

@@ -44,6 +44,14 @@
         <input type="mailto" value="example@example.com">
         <input type="button" value="Enviar">
     </div>
+
+	<style>
+		.conteudo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
 		
 	</main>
 	<footer>

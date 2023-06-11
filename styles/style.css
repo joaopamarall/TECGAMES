@@ -26,124 +26,158 @@ body {
 		'rodape';
 }
 
-  a {
+a {
 	color: #fff;
 	text-decoration: none;
 	transition: 0.3s;
-  }
+}
 
-  a:hover {
+a:hover {
 	opacity: 0.7;
-  }
+}
 
-  .logo {
+.logo {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-  }
+}
 
-  .image-logo {
+.image-logo {
 	height: 50px;
-  }
-  .store-name {
-	font-size: 24px;
-  	text-transform: uppercase;
-  	letter-spacing: 4px;
-	margin-top: 9px;
-  }
+}
 
-  nav {
+.store-name {
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-top: 9px;
+}
+
+nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 	background: rgb(116, 185, 255);
-  }
+}
 
-  .nav-list {
+.nav-list {
 	list-style: none;
 	display: flex;
-  }
+}
 
-  .nav-list li {
+.nav-list li {
 	letter-spacing: 3px;
 	margin-left: 32px;
-  }
+}
 
-  .mobile-menu {
+.mobile-menu {
 	display: none;
 	cursor: pointer;
-  }
+}
 
-  .mobile-menu div {
+.mobile-menu div {
 	width: 32px;
 	height: 2px;
 	background: #fff;
 	margin: 8px;
 	transition: 0.3s;
-  }
+}
 
-  @media (max-width: 999px) {
+@media (max-width: 999px) {
 	body {
-	  overflow-x: hidden;
+		overflow-x: hidden;
 	}
+
 	.nav-list {
-	  position: absolute;
-	  top: 8vh;
-	  right: 0;
-	  width: 50vw;
-	  height: 92vh;
-	  background: rgb(116, 185, 255);
-	  flex-direction: column;
-	  align-items: center;
-	  justify-content: space-around;
-	  transform: translateX(100%);
-	  transition: transform 0.3s ease-in;
+		position: absolute;
+		top: 8vh;
+		right: 0;
+		width: 50vw;
+		height: 92vh;
+		background: rgb(116, 185, 255);
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
 	}
+
 	.nav-list li {
-	  margin-left: 0;
-	  opacity: 0;
+		margin-left: 0;
+		opacity: 0;
 	}
+
 	.mobile-menu {
-	  display: block;
+		display: block;
 	}
-  }
+}
 
-  .nav-list.active {
+.nav-list.active {
 	transform: translateX(0);
-  }
+}
 
-  @keyframes navLinkFade {
+@keyframes navLinkFade {
 	from {
-	  opacity: 0;
-	  transform: translateX(50px);
+		opacity: 0;
+		transform: translateX(50px);
 	}
+
 	to {
-	  opacity: 1;
-	  transform: translateX(0);
+		opacity: 1;
+		transform: translateX(0);
 	}
-  }
+}
 
-  .mobile-menu.active .line1 {
+.mobile-menu.active .line1 {
 	transform: rotate(-45deg) translate(-8px, 8px);
-  }
+}
 
-  .mobile-menu.active .line2 {
+.mobile-menu.active .line2 {
 	opacity: 0;
-  }
+}
 
-  .mobile-menu.active .line3 {
+.mobile-menu.active .line3 {
 	transform: rotate(45deg) translate(-5px, -7px);
-  }
+}
 
-  .conteudo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
+.conteudo {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+		'promocao'
+		'produtos'
+		'final';
+}
 
-  .card-login,
-  .card-cadastro {
+.image-promo {
+	background-color: rgb(113, 140, 183);
+}
+
+.produtos {
+	background-color: rgb(63, 110, 186);
+}
+
+.final {
+	background-color: rgb(16, 47, 96);
+}
+
+.image-promo {
+	grid-area: promocao;
+}
+
+.produtos {
+	grid-area: produtos;
+}
+
+.final {
+	grid-area: final;
+}
+
+.card-login,
+.card-cadastro {
 	height: 400px;
 	width: 300px;
 	background-color: rgb(150, 201, 185);
@@ -153,66 +187,13 @@ body {
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
-  }
+}
 
-  .rodape {
+.rodape {
 	display: flex;
 	justify-content: center;
 }
 
 .rodape p {
 	align-self: flex-end;
-}
-
-section.slider {
-	margin: 0 auto;
-	width: 100%;
-	height: auto;
-	padding: 0 !important;
-	overflow: hidden;
-}
-
-.slider-content{
-	width: 400%;
-	height: auto;
-	display: flex;
-}
-
-.slider-content input {
-	display: none;
-}
-
-.slide-box {
-	width: 25%;
-	height: auto;
-	position: relative;
-	text-align: center;
-}
-
-.slide-box img{
-	width: 100%;
-}
-
-.nav-manual, .nav-auto{
-	position: absolute;
-	width: 100%;
-	margin-top: 35%;
-	display: flex;
-	justify-content: center;
-}
-
-.nav-manual .manual-btn, .nav-auto div{
-	border: 1px solid #00b7ff;
-	padding: 10px;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: 0.2s;
-}
-
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
-	margin-right: 10px;
-}
-
-.nav-manual .manual-btn:hover {
-	background-color: #00b7ff;
 }

@@ -33,6 +33,33 @@
 	
 	<main class="conteudo">
 		
+		<section class="slider">
+			<div class="slider-content">
+				
+				<input type="radio" name="btn-radio" id="radio1">
+				<input type="radio" name="btn-radio" id="radio2">
+		
+							<div class="slide-box primeiro">
+							<img class="img-desktop" src="../images/carrosel1.jpg" alt="slide 1">
+							</div>
+		
+							<div class="slide-box">
+							<img class="img-desktop" src="../images/carrosel2.jpg" alt="slide 1">
+							</div>
+		
+				<div class="nav-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+				</div>
+		
+				<div class="nav-manual">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+				</div> 
+		
+			</div>
+		</section>
+
 	</main>
 	<footer>
 			<p class="rodape">TECGAMES &copy; 2023</p>

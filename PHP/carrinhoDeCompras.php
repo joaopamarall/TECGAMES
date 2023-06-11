@@ -30,8 +30,54 @@
 		</nav>
 	</header>
 	
+	<style>
+		/* Estilos para o carrinho de compras */
+		.cart {
+		  border: 1px solid #ccc;
+		  padding: 10px;
+		}
+		.cart-item {
+		  margin-bottom: 10px;
+		}
+		.cart-item span {
+		  font-weight: bold;
+		}
+	  </style>
+
 	<main class="conteudo">
 		
+		<div class="cart">
+			<h2>Itens no Carrinho</h2>
+			<div class="cart-item">
+			  <span>Item 1:</span> Camiseta
+			</div>
+			<div class="cart-item">
+			  <span>Item 2:</span> Calça
+			</div>
+			<div class="cart-item">
+			  <span>Item 3:</span> Sapato
+			</div>
+			
+
+		  <form>
+			<h2>Dados do Cartão</h2>
+			<label for="card-number">Número do Cartão:</label>
+			<input type="text" id="card-number" name="card-number" placeholder="Número do Cartão" required>
+			
+			<label for="card-holder">Nome do Titular:</label>
+			<input type="text" id="card-holder" name="card-holder" placeholder="Nome do Titular" required>
+			
+			<label for="expiry-date">Data de Expiração:</label>
+			<input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+			
+			<label for="cvv">CVV:</label>
+			<input type="password" id="cvv" name="cvv" placeholder="CVV" required>
+			
+			<button class="checkout-button">Finalizar Compra</button>
+		  </form>
+		</div>
+
+
 	</main>
 	<footer>
 			<p class="rodape">TECGAMES &copy; 2023</p>

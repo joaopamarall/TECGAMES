@@ -81,7 +81,28 @@
 
 	</main>
 	<footer>
-			<p class="rodape">TECGAMES &copy; 2023</p>
+	<section class="rodape2">
+		
+        <center> <img src="../images/credito.png" width="200px"; ></center>
+         <center> <img src="../images/siteseguro.png" width="110px";></center>
+
+
+		 <p class="rodape1">
+
+	R. Barão do Rio Branco, 136 - Centro, Curitiba - PR, 80010-180 <br>
+
+	</p>
+
+	<center><p class="rodape1">
+	Telefone:(41) 3358-0621 Whatsapp:(41) 9-9812-7232<br>
+</p></center>
+
+     
+         
+		 <p class="rodape">TECGAMES &copy; 2023</p>
+          
+        </section>
+			
 	</footer>
 	<script src="../javascript/script.js"></script>
 </body>

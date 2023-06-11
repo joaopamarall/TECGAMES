@@ -33,8 +33,8 @@
 
 	<main class="conteudo">
 
-		<div class="image-promo">
-			<a href="OfertaDoDia.php"><img src="">poipoipoi</a>
+		<div class="promo">
+			<a href="OfertaDoDia.php"><img src="../images/carrosel1.jpg" class="image-promo"></a>
 		</div>
 
 		<div class="produtos">

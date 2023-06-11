@@ -158,12 +158,12 @@ nav {
 
 .produtos {
 	grid-area: produtos;
-	background-color: rgb(63, 110, 186);
+	background-color: rgb(116, 185, 255);
 }
 
 .final {
 	grid-area: final;
-	background-color: rgb(16, 47, 96);
+	background-color:rgb(116, 185, 255);
 }
 
 .image-promo {
@@ -187,8 +187,28 @@ nav {
 .rodape {
 	display: flex;
 	justify-content: center;
+	background-color:rgb(116, 185, 255);
+font-size: 20px;
 }
 
 .rodape p {
+	display: flex;
+	justify-content: center;
 	align-self: flex-end;
+	background-color:rgb(116, 185, 255);
 }
+
+.rodape2 {
+
+	background-color:rgb(116, 185, 255);
+}
+
+.rodape1{
+	display: flex;
+	justify-content: center;
+font-size: 19px;
+	
+}
+
+
+

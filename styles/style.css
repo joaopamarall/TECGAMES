@@ -145,11 +145,10 @@ nav {
 	display: grid;
 	min-height: 100vh;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
 		'promocao'
-		'produtos'
-		'final';
+		'produtos';
 }
 .promo {
 	grid-area: promocao;
@@ -159,11 +158,6 @@ nav {
 .produtos {
 	grid-area: produtos;
 	background-color: rgb(116, 185, 255);
-}
-
-.final {
-	grid-area: final;
-	background-color:rgb(116, 185, 255);
 }
 
 .image-promo {
@@ -182,6 +176,10 @@ nav {
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
+}
+
+input {
+	margin: 3px 10px;
 }
 
 .rodape {

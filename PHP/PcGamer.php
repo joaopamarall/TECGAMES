@@ -22,10 +22,9 @@
 			  <div class="line3"></div>
 			</div>
 			<ul class="nav-list">
-				<li><a href="Lancamento.php">Lançamento</a></li>
 				<li><a href="PcGamer.php">PC Gamer</a></li>
 				<li><a href="Perifericos.php">Periféricos</a></li>
-				<li><a href="OfertaDoDia.php">Oferta do dia</a></li>
+				<li><a href="carrinhoDeCompras.php">Carrinho de Compras</a></li>
 				<li><a href="login.php">Login/Cadastro</a></li>
 			</ul>
 		</nav>
@@ -47,25 +46,20 @@
 
 	</main>
 	<footer>
-	<section class="rodape2">
-		
-        <center> <img src="../images/credito.png" width="200px"; ></center>
-         <center> <img src="../images/siteseguro.png" width="110px";></center>
 
+    	<section class="rodape2">
+			<center><img src="../images/credito.png" width="200px"; ></center>
+			<center><img src="../images/siteseguro.png" width="110px";></center>
 
-		 <p class="rodape1">
+			<p class="rodape1">
+				R. Barão do Rio Branco, 136 - Centro, Curitiba - PR, 80010-180 <br>
+			</p>
 
-	R. Barão do Rio Branco, 136 - Centro, Curitiba - PR, 80010-180 <br>
-
-	</p>
-
-	<center><p class="rodape1">
-	Telefone:(41) 3358-0621 Whatsapp:(41) 9-9812-7232<br>
-</p></center>
-
-     
-         
-		 <p class="rodape">TECGAMES &copy; 2023</p>
+			<p class="rodape1">
+				Telefone:(41) 3358-0621 Whatsapp:(41) 9-9812-7232<br>
+			</p>
+			
+			<p class="rodape">TECGAMES &copy; 2023</p>
           
         </section>
 	</footer>

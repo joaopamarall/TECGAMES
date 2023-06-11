@@ -1,10 +1,18 @@
+<?php
+include('conexao.php');
+$conexao = mysqli_connect("localhost", "root", "", "login");
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="../images/logo2.png" type="image/x-icon">
+	<link rel="icon" href="../images/logo1.png" type="image/x-icon">
 	<link rel="stylesheet" href="../styles/style.css">
 	<title>TECGAMES</title>
 </head>
@@ -12,7 +20,7 @@
 	<header class="cabecalho">
 		<nav class="menu">
 			<div class="logo">
-				<img src="../images/logo2.png" class="image-logo">
+				<img src="../images/logo1.png" class="image-logo">
 				<a class="store-name" href="../PHP/inicio.php">TECGAMES</a>
 			</div>
 			<div class="mobile-menu">
@@ -21,10 +29,9 @@
 			  <div class="line3"></div>
 			</div>
 			<ul class="nav-list">
-				<li><a href="Lancamento.php">Lançamento</a></li>
 				<li><a href="PcGamer.php">PC Gamer</a></li>
 				<li><a href="Perifericos.php">Periféricos</a></li>
-				<li><a href="OfertaDoDia.php">Oferta do dia</a></li>
+				<li><a href="carrinhoDeCompras.php">Carrinho de Compras</a></li>
 				<li><a href="login.php">Login/Cadastro</a></li>
 			</ul>
 		</nav>
@@ -32,17 +39,60 @@
 	
 	<main class="conteudo">
 
+	
     <div class="card-login">
-        <h1>Login</h1>
-        <p>Coloque seu email:</p>
-        <input type="mailto" value="example@example.com">
+        <h1>LOGIN</h1>
+        <label>Coloque seu email:</label>
+        <input type="mailto" placeholder="name@example.com">
+
+		<label for="senha">Senha:</label>
+  		<input type="password" id="senha" placeholder="Digite sua senha" required>
+
         <input type="button" value="Enviar">
     </div>
+
+	<h1>OU</h1>
+
     <div class="card-cadastro">
-        <h1>Cadastre-se</h1>
+        <h1>CADASTRE-SE</h1>
+
         <p>Cadastre seu email:</p>
-        <input type="mailto" value="example@example.com">
-        <input type="button" value="Enviar">
+
+			<form id="meuFormulario" method="POST" action="cadastro.php" onsubmit="return validarFormulario();">
+            <div class="form-group">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+			<div class="form-group">
+                <label for="cpf">CPF:</label><br>
+                <input type="text" id="cpf" name="cpf" required>
+            </div>
+
+            <div class="form-group">
+                <label for="data">Data de Nascimento:</label><br>
+                <input type="date" id="data" name="data" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Celular:</label><br>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+
+			<input type="submit" value="Cadastrar">
+			<div id="mensagemRetorno"></div>
+
+		</form>
     </div>
 
 	<style>
@@ -52,28 +102,64 @@
 			align-items: center;
 		}
 	</style>
-		
+	<script>
+		function validarFormulario() {
+			var nome = document.forms["cadastro"]["nome"].value;
+			var email = document.forms["cadastro"]["email"].value;
+			var cpf = document.forms["cadastro"]["cpf"].value;
+			var data = document.forms["cadastro"]["data"].value;
+			var telefone = document.forms["cadastro"]["telefone"].value;
+			var endereco = document.forms["cadastro"]["endereco"].value;
+			var mensagemRetorno = document.getElementById('mensagemRetorno');
+
+			if (nome == "") {
+				alert("Por favor, preencha o campo Nome");
+				return false;
+			}
+
+			if (email == "") {
+				alert("Por favor, preencha o campo Email");
+				return false;
+			}
+
+			if (datanasc == "") {
+				alert("Por favor, preencha o campo Data de Nascimento");
+				return false;
+			}
+
+			if (cpf == "") {
+				alert("Por favor, preencha o campo CPF");
+				return false;
+			}
+
+			if (celular == "") {
+				alert("Por favor, preencha o campo Celular");
+				return false;
+			}
+
+			if (endereco == "") {
+				alert("Por favor, preencha o campo Endereço");
+				return false;
+			}
+		}
+
+	</script>
 	</main>
 	<footer>
-	<section class="rodape2">
-		
-        <center> <img src="../images/credito.png" width="200px"; ></center>
-         <center> <img src="../images/siteseguro.png" width="110px";></center>
 
+    	<section class="rodape2">
+			<center><img src="../images/credito.png" width="200px"; ></center>
+			<center><img src="../images/siteseguro.png" width="110px";></center>
 
-		 <p class="rodape1">
+			<p class="rodape1">
+				R. Barão do Rio Branco, 136 - Centro, Curitiba - PR, 80010-180 <br>
+			</p>
 
-	R. Barão do Rio Branco, 136 - Centro, Curitiba - PR, 80010-180 <br>
-
-	</p>
-
-	<center><p class="rodape1">
-	Telefone:(41) 3358-0621 Whatsapp:(41) 9-9812-7232<br>
-</p></center>
-
-     
-         
-		 <p class="rodape">TECGAMES &copy; 2023</p>
+			<p class="rodape1">
+				Telefone:(41) 3358-0621 Whatsapp:(41) 9-9812-7232<br>
+			</p>
+			
+			<p class="rodape">TECGAMES &copy; 2023</p>
           
         </section>
 	</footer>

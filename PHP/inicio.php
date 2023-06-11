@@ -34,46 +34,102 @@
 	<main class="conteudo">
 
 		<div class="promo">
-			<a href="OfertaDoDia.php"><img src="../images/carrosel1.jpg" class="image-promo"></a>
+			<a><img src="../images/carrosel1.jpg" class="image-promo"></a>
 		</div>
 
 		<div class="produtos">
-			<p>div2</p>
-		</div>
+      <div class="product-line">
+        <div class="product">
+          <img src="caminho-para-imagem1.jpg" alt="Produto 1">
+          <h3 class="product-title">Produto 1</h3>
+          <p>Descrição do Produto 1</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
 
-		<div class="final">
-			<p>div3</p>
-		</div>
+        <div class="product">
+          <img src="caminho-para-imagem2.jpg" alt="Produto 2">
+          <h3 class="product-title">Produto 2</h3>
+          <p>Descrição do Produto 2</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
 
+        <div class="product">
+          <img src="caminho-para-imagem3.jpg" alt="Produto 3">
+          <h3 class="product-title">Produto 3</h3>
+          <p>Descrição do Produto 3</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+
+      </div>
+
+      <div class="product-line">
+        <div class="product">
+          <img src="caminho-para-imagem1.jpg" alt="Produto 1">
+          <h3 class="product-title">Produto 1</h3>
+          <p>Descrição do Produto 1</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+          <img src="caminho-para-imagem2.jpg" alt="Produto 2">
+          <h3 class="product-title">Produto 2</h3>
+          <p>Descrição do Produto 2</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="product">
+          <img src="caminho-para-imagem3.jpg" alt="Produto 3">
+          <h3 class="product-title">Produto 3</h3>
+          <p>Descrição do Produto 3</p>
+          <button>Adicionar ao Carrinho</button>
+        </div>
+        
+      </div>
+    </div>
+		
 	</main>
 	<footer>
-	
-		
-	
-	
-       <section class="rodape2">
-		
-        <center> <img src="../images/credito.png" width="200px"; ></center>
-         <center> <img src="../images/siteseguro.png" width="110px";></center>
 
+    	<section class="rodape2">
+			<center><img src="../images/credito.png" width="200px"; ></center>
+			<center><img src="../images/siteseguro.png" width="110px";></center>
 
-		 <p class="rodape1">
+			<p class="rodape1">
+				R. Barão do Rio Branco, 136 - Centro, Curitiba - PR, 80010-180 <br>
+			</p>
 
-	R. Barão do Rio Branco, 136 - Centro, Curitiba - PR, 80010-180 <br>
-
-	</p>
-
-	<center><p class="rodape1">
-	Telefone:(41) 3358-0621 Whatsapp:(41) 9-9812-7232<br>
-</p></center>
-
-     
-         
-		 <p class="rodape">TECGAMES &copy; 2023</p>
+			<p class="rodape1">
+				Telefone:(41) 3358-0621 Whatsapp:(41) 9-9812-7232<br>
+			</p>
+			
+			<p class="rodape">TECGAMES &copy; 2023</p>
           
         </section>
 	</footer>
 
+	<style>
+    /* Estilos para a linha de produtos */
+    .product-line {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .product {
+      width: 30%;
+      text-align: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .product-title {
+      font-weight: bold;
+    }
+  </style>
 
 	<script src="../javascript/script.js"></script>
 </body>

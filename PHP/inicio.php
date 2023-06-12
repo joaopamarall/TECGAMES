@@ -40,48 +40,49 @@
 		<div class="produtos">
       <div class="product-line">
         <div class="product">
-          <img src="caminho-para-imagem1.jpg" alt="Produto 1">
-          <h3 class="product-title">Produto 1</h3>
-          <p>Descrição do Produto 1</p>
-          <button>Adicionar ao Carrinho</button>
+          <img src="../images/pc1.png" alt="Produto 1">
+          <h5 class="product-title">Computador T-HOME Executor </h5>
+          <p class="computadores">AMD Ryzen 7 5700G / 8GB DDR4 / SSD 240GB </p>
+          <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
         <div class="product">
-          <img src="caminho-para-imagem2.jpg" alt="Produto 2">
-          <h3 class="product-title">Produto 2</h3>
-          <p>Descrição do Produto 2</p>
-          <button>Adicionar ao Carrinho</button>
+          <img src="../images/PC4.png" alt="Produto 2">
+          <h5 class="product-title">PC Gamer T-Gamer Flame </h5>
+          <p class="computadores">AMD Ryzen 7 5700X / NVIDIA GeForce RTX 3060 / 16GB DDR4 / HT 1TB</p>
+          <a href="carrinhoDeCompras.php">  <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
         <div class="product">
-          <img src="caminho-para-imagem3.jpg" alt="Produto 3">
-          <h3 class="product-title">Produto 3</h3>
-          <p>Descrição do Produto 3</p>
-          <button>Adicionar ao Carrinho</button>
+          <img src="../images/pc3.png" alt="Produto 3">
+          <h5 class="product-title">Computador T-Home Create
+          </h5>
+          <p class="computadores">AMD Ryzen 5 4600G / 16GB (2x8GB) DDR4 / SSD 240GB
+          </p>
+         <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
       </div>
-
       <div class="product-line">
         <div class="product">
-          <img src="caminho-para-imagem1.jpg" alt="Produto 1">
-          <h3 class="product-title">Produto 1</h3>
-          <p>Descrição do Produto 1</p>
-          <button>Adicionar ao Carrinho</button>
+          <img src="../images/PC5.png" alt="Produto 1">
+          <h3 class="product-title">PC Gamer Custo Beneficio 2022</h3>
+          <p class="computadores">Ryzen 5 5600X / NVIDIA GeForce RTX 3060 / 16GB(2x8) DDR4 / SSD 480GB</p>
+          <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
         <div class="product">
-          <img src="caminho-para-imagem2.jpg" alt="Produto 2">
-          <h3 class="product-title">Produto 2</h3>
-          <p>Descrição do Produto 2</p>
-          <button>Adicionar ao Carrinho</button>
+          <img src="../images/PC6.png" alt="Produto 2">
+          <h3 class="product-title">PC Gamer T-GAMER Odin</h3>
+          <p class="computadores">Intel i7 10700KF / NVIDIA GeForce RTX 4070 Ti / 16GB (2x8GB) DDR4 / SSD 240GB</p>
+          <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
         <div class="product">
-          <img src="caminho-para-imagem3.jpg" alt="Produto 3">
-          <h3 class="product-title">Produto 3</h3>
-          <p>Descrição do Produto 3</p>
-          <button>Adicionar ao Carrinho</button>
+          <img src="../images/PC7.png" alt="Produto 3">
+          <h3 class="product-title">Computador T-Home Create</h3>
+          <p class="computadores">AMD Ryzen 3 3200G / 8GB DDR4 / SSD 240GB </p>
+         <br>    <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
         
       </div>
@@ -115,20 +116,76 @@
       margin-bottom: 20px;
     }
     .product {
-      width: 30%;
-      text-align: center;
-      border: 1px solid #ccc;
+      
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+     
       padding: 10px;
     }
     .product img {
-      width: 100%;
-      max-height: 200px;
+      width: 80%;
       object-fit: cover;
       margin-bottom: 10px;
     }
     .product-title {
+      font-size: 19px;
       font-weight: bold;
     }
+
+    .computadores {
+      text-align: justify;
+  max-width: 70%;
+      font-size: 13px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #2e2e2e;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    
+    .btn:hover {
+      background-color: #00165f;
+    }
+
+    .btn:hover:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+    }
+    
+
+
   </style>
 
 	<script src="../javascript/script.js"></script>

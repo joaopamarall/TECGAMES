@@ -1,8 +1,48 @@
 <?php
 include('conexao.php');
-$conexao = mysqli_connect("localhost", "root", "", "login");
 
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    if (isset($_POST["cadastro"])) {
+        $nome = $_POST["nome"];
+        $email = $_POST["email"];
+        $cpf = $_POST["cpf"];
+        $dataNascimento = $_POST["data"];
+        $telefone = $_POST["telefone"];
+        $endereco = $_POST["endereco"];
 
+        $sql = "INSERT INTO usuarios (nome, email, cpf, data_nascimento, telefone, endereco) VALUES (?, ?, ?, ?, ?, ?)";
+        $stmt = mysqli_prepare($conexao, $sql);
+        mysqli_stmt_bind_param($stmt, "ssssss", $nome, $email, $cpf, $dataNascimento, $telefone, $endereco);
+        mysqli_stmt_execute($stmt);
+
+        if (mysqli_stmt_affected_rows($stmt) > 0) {
+            echo "Cadastro realizado com sucesso!";
+        } else {
+            echo "Erro ao cadastrar usuário.";
+        }
+
+        mysqli_stmt_close($stmt);
+        mysqli_close($conexao);
+    } elseif (isset($_POST["login"])) {
+        $email = $_POST["email"];
+        $senha = $_POST["senha"];
+
+        $sql = "SELECT * FROM usuarios WHERE email = ? AND senha = ?";
+        $stmt = mysqli_prepare($conexao, $sql);
+        mysqli_stmt_bind_param($stmt, "ss", $email, $senha);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_store_result($stmt);
+
+        if (mysqli_stmt_num_rows($stmt) == 1) {
+            echo "Login realizado com sucesso!";
+        } else {
+            echo "Erro ao autenticar usuário.";
+        }
+
+        mysqli_stmt_close($stmt);
+        mysqli_close($conexao);
+    }
+}
 ?>
 
 
@@ -75,8 +115,8 @@ $conexao = mysqli_connect("localhost", "root", "", "login");
             </div>
 
             <div class="form-group">
-                <label for="data">Data de Nascimento:</label><br>
-                <input type="date" id="data" name="data" required>
+                <label for="datanasc">Data de Nascimento:</label><br>
+                <input type="date" id="datanasc" name="datanasc" required>
             </div>
 
             <div class="form-group">
@@ -107,7 +147,7 @@ $conexao = mysqli_connect("localhost", "root", "", "login");
 			var nome = document.forms["cadastro"]["nome"].value;
 			var email = document.forms["cadastro"]["email"].value;
 			var cpf = document.forms["cadastro"]["cpf"].value;
-			var data = document.forms["cadastro"]["data"].value;
+			var datanasc = document.forms["cadastro"]["datanasc"].value;
 			var telefone = document.forms["cadastro"]["telefone"].value;
 			var endereco = document.forms["cadastro"]["endereco"].value;
 			var mensagemRetorno = document.getElementById('mensagemRetorno');
@@ -132,7 +172,7 @@ $conexao = mysqli_connect("localhost", "root", "", "login");
 				return false;
 			}
 
-			if (celular == "") {
+			if (telefone == "") {
 				alert("Por favor, preencha o campo Celular");
 				return false;
 			}

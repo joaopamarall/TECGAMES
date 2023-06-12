@@ -149,6 +149,8 @@ nav {
 	grid-template-areas:
 		'promocao'
 		'produtos';
+	background-color: #e4d2ec;
+
 }
 .promo {
 	grid-area: promocao;
@@ -167,20 +169,27 @@ nav {
 
 .card-login,
 .card-cadastro {
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	height: 400px;
 	width: 300px;
-	background-color: rgb(150, 201, 185);
+	background-color:rgb(116, 185, 255);
 	border: 1px solid #000;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-input {
-	margin: 3px 10px;
+.card-cadastro input, 
+.card-login input{
+	border: 1px solid #000;
+	border-radius: 3px;
+
 }
+
 
 .rodape {
 	display: flex;

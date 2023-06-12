@@ -49,13 +49,13 @@
 			<div class="cart">
 				<h2>Itens no Carrinho</h2>
 				<div class="cart-item">
-				<span>Item 1:</span> Camiseta
+				<span>Item 1:</span> Computador T-HOME Executor
 				</div>
 				<div class="cart-item">
-				<span>Item 2:</span> Calça
+				<span>Item 2:</span> Computador T-Home Create
 				</div>
 				<div class="cart-item">
-				<span>Item 3:</span> Sapato
+				<span>Item 3:</span> Controle Sony DualSense PS5
 				</div>
 				
 

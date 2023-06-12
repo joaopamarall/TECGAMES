@@ -82,13 +82,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <div class="card-login">
         <h1>LOGIN</h1>
         <form method="POST" action="login.php">
-            <label for="email-login">Coloque seu email:</label>
-            <input type="email" id="email-login" name="email" placeholder="name@example.com" required>
+            <center><label for="email-login">Coloque seu email:</label>
+            <input type="email" id="email-login" name="email" placeholder="name@example.com" required><br>
 
-            <label for="senha-login">Senha:</label>
-            <input type="password" id="senha-login" name="senha" placeholder="Digite sua senha" required>
+            <label for="senha-login">Senha:</label><br>
+            <input type="password" id="senha-login" name="senha" placeholder="Digite sua senha" required><br>
 
-            <input type="submit" name="login" value="Enviar">
+            <input type="submit" name="login" value="Enviar"></center>
         </form>
     </div>
 
@@ -99,40 +99,40 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <form method="POST" action="login.php" onsubmit="return validarFormulario()">
             <div class="form-group">
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" placeholder="Insira o nome..." required>
             </div>
 
             <div class="form-group">
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Insira o email..." required>
             </div>
 
             <div class="form-group">
                 <label for="senha">Senha:</label><br>
-                <input type="password" id="senha" name="senha" required>
+                <input type="password" id="senha" name="senha" placeholder="Insira a senha..." required>
             </div>
 
             <div class="form-group">
                 <label for="cpf">CPF:</label><br>
-                <input type="text" id="cpf" name="cpf" required>
+                <input type="text" id="cpf" name="cpf" placeholder="Insira o CPF..."required>
             </div>
 
             <div class="form-group">
                 <label for="datanasc">Data de Nascimento:</label><br>
-                <input type="date" id="datanasc" name="datanasc" required>
+                <input type="date" id="datanasc" name="datanasc" placeholder="Insira a data de nascimento..." required>
             </div>
 
             <div class="form-group">
                 <label for="telefone">Celular:</label><br>
-                <input type="tel" id="telefone" name="telefone" required>
+                <input type="tel" id="telefone" name="telefone" placeholder="Insira o celular..." required>
             </div>
 
             <div class="form-group">
                 <label for="endereco">Endereço:</label><br>
-                <input type="text" id="endereco" name="endereco" required>
+                <input type="text" id="endereco" name="endereco" placeholder="Insira o endereço..."required>
             </div>
 
-            <input type="submit" name="cadastro" value="Cadastrar">
+            <input type="submit" class="cadastrar" value="Cadastrar">
         </form>
     </div>
 

@@ -25,7 +25,6 @@
 				<li><a href="PcGamer.php">PC Gamer</a></li>
 				<li><a href="Perifericos.php">Periféricos</a></li>
         <li><a href="carrinhoDeCompras.php">Carrinho de Compras</a></li>
-				<li><a href="login.php">Login/Cadastro</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -39,55 +38,48 @@
 		<div class="produtos">
       <div class="product-line">
         <div class="product">
-          <img src="../images/per1.png" alt="Produto 1" class="imagem-com-borda">
-          <h5 class="product-title">Mouse Gamer SuperFrame Light </h5>
-          <p class="computadores">RGB, Sensor 725C, 7200 DPI, 7 Botões, USB </p>
-          <p class="precos"> R$99,90 a vista<br>24x sem juros</p>
+          <img src="../images/pc1.png" alt="Produto 1">
+          <h5 class="product-title">Computador T-HOME Executor </h5>
+          <p class="computadores">AMD Ryzen 7 5700G / 8GB DDR4 / SSD 240GB </p>
           <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
         <div class="product">
-          <img src="../images/per2.png" alt="Produto 2" class="imagem-com-borda">
-          <h5 class="product-title">Controle Sony DualSense PS5 </h5>
-          <p class="computadores">Sem Fio, White, 3005767</p>
-          <p class="precos"> R$499,90 a vista<br>24x sem juros</p>
+          <img src="../images/PC4.png" alt="Produto 2">
+          <h5 class="product-title">PC Gamer T-Gamer Flame </h5>
+          <p class="computadores">AMD Ryzen 7 5700X / NVIDIA GeForce RTX 3060 / 16GB DDR4 / HT 1TB</p>
           <a href="carrinhoDeCompras.php">  <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
         <div class="product">
-          <img src="../images/per3.png" alt="Produto 3" class="imagem-com-borda">
-          <h5 class="product-title">Microfone Gamer Fifine Ampligame A6T
+          <img src="../images/pc3.png" alt="Produto 3">
+          <h5 class="product-title">Computador T-Home Create
           </h5>
-          <p class="computadores">RGB, USB, Black, Com Braço Articulado
+          <p class="computadores">AMD Ryzen 5 4600G / 16GB (2x8GB) DDR4 / SSD 240GB
           </p>
-          <p class="precos"> R$199,90 a vista<br>24x sem juros</p>
          <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
       </div>
       <div class="product-line">
         <div class="product">
-          <img src="../images/per4.png" alt="Produto 1" class="imagem-com-borda">
-          <h3 class="product-title">Headset Gamer Redragon Hero</h3>
-          <p class="computadores">3.5mm, Múltiplas Plataformas, Pink, H530-P</p>
-          <p class="precos"> R$299,90 a vista<br>24x sem juros</p>
+          <img src="../images/PC5.png" alt="Produto 1">
+          <h3 class="product-title">PC Gamer Custo Beneficio 2022</h3>
+          <p class="computadores">Ryzen 5 5600X / NVIDIA GeForce RTX 3060 / 16GB(2x8) DDR4 / SSD 480GB</p>
           <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
         <div class="product">
-          <img src="../images/per5.png" alt="Produto 2" class="imagem-com-borda">
-          <h3 class="product-title">Monitor Gamer SuperFrame Vision</h3>
-          <p class="computadores">23.8 Pol, Full HD, IPS, G-Sync/FreeSync, 1ms, 144Hz, HDMI/DP, SFV2409</p>
-          <p class="precos"> R$1199,90 a vista<br>24x sem juros</p>
+          <img src="../images/PC6.png" alt="Produto 2">
+          <h3 class="product-title">PC Gamer T-GAMER Odin</h3>
+          <p class="computadores">Intel i7 10700KF / NVIDIA GeForce RTX 4070 Ti / 16GB (2x8GB) DDR4 / SSD 240GB</p>
           <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
         <div class="product">
-          <img src="../images/per6.png" alt="Produto 3" class="imagem-com-borda">
-          <h3 class="product-title">Cadeira Gamer SuperFrame Knight</h3>
-          <p class="computadores">Reclinável, Preto e Branco
-          </p>
-          <p class="precos"> R$799,90 a vista<br>24x sem juros</p>
+          <img src="../images/PC7.png" alt="Produto 3">
+          <h3 class="product-title">Computador T-Home Create</h3>
+          <p class="computadores">AMD Ryzen 3 3200G / 8GB DDR4 / SSD 240GB </p>
          <br>    <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
         
@@ -131,11 +123,9 @@
       padding: 10px;
     }
     .product img {
-      width: 75%;
-      height: 75%;
+      width: 80%;
       object-fit: cover;
       margin-bottom: 10px;
-
     }
     .product-title {
       font-size: 19px;
@@ -165,11 +155,18 @@
       background-color: #00165f;
     }
 
-    .precos{
-	font-size: 20px;
-}
+    .btn:hover:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      animation: pulse 1s infinite;
+    }
 
-   
     @keyframes pulse {
       0% {
         transform: scale(1);

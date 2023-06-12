@@ -22,10 +22,9 @@
 			  <div class="line3"></div>
 			</div>
 			<ul class="nav-list">
-				<li><a href="Lancamento.php">Lançamento</a></li>
 				<li><a href="PcGamer.php">PC Gamer</a></li>
 				<li><a href="Perifericos.php">Periféricos</a></li>
-				<li><a href="OfertaDoDia.php">Oferta do dia</a></li>
+        <li><a href="carrinhoDeCompras.php">Carrinho de Compras</a></li>
 				<li><a href="login.php">Login/Cadastro</a></li>
 			</ul>
 		</nav>
@@ -43,6 +42,7 @@
           <img src="../images/pc1.png" alt="Produto 1">
           <h5 class="product-title">Computador T-HOME Executor </h5>
           <p class="computadores">AMD Ryzen 7 5700G / 8GB DDR4 / SSD 240GB </p>
+          <p class="precos"> R$1999,90 a vista<br>24x sem juros</p>
           <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
@@ -50,6 +50,7 @@
           <img src="../images/PC4.png" alt="Produto 2">
           <h5 class="product-title">PC Gamer T-Gamer Flame </h5>
           <p class="computadores">AMD Ryzen 7 5700X / NVIDIA GeForce RTX 3060 / 16GB DDR4 / HT 1TB</p>
+          <p class="precos"> R$4199,90 a vista<br>24x sem juros</p>
           <a href="carrinhoDeCompras.php">  <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
@@ -59,6 +60,7 @@
           </h5>
           <p class="computadores">AMD Ryzen 5 4600G / 16GB (2x8GB) DDR4 / SSD 240GB
           </p>
+          <p class="precos"> R$2299,90 a vista<br>24x sem juros</p>
          <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
@@ -68,6 +70,7 @@
           <img src="../images/PC5.png" alt="Produto 1">
           <h3 class="product-title">PC Gamer Custo Beneficio 2022</h3>
           <p class="computadores">Ryzen 5 5600X / NVIDIA GeForce RTX 3060 / 16GB(2x8) DDR4 / SSD 480GB</p>
+          <p class="precos"> R$4590,90 a vista<br>24x sem juros</p>
           <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
@@ -75,6 +78,7 @@
           <img src="../images/PC6.png" alt="Produto 2">
           <h3 class="product-title">PC Gamer T-GAMER Odin</h3>
           <p class="computadores">Intel i7 10700KF / NVIDIA GeForce RTX 4070 Ti / 16GB (2x8GB) DDR4 / SSD 240GB</p>
+          <p class="precos"> R$5999,90 a vista<br>24x sem juros</p>
           <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
 
@@ -82,6 +86,7 @@
           <img src="../images/PC7.png" alt="Produto 3">
           <h3 class="product-title">Computador T-Home Create</h3>
           <p class="computadores">AMD Ryzen 3 3200G / 8GB DDR4 / SSD 240GB </p>
+          <p class="precos"> R$2590,90 a vista<br>24x sem juros</p>
          <br>    <a href="carrinhoDeCompras.php"> <button class="btn">Adicionar ao Carrinho</button> </a> 
         </div>
         
@@ -157,17 +162,7 @@
       background-color: #00165f;
     }
 
-    .btn:hover:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.2);
-      border-radius: 4px;
-      animation: pulse 1s infinite;
-    }
+    
 
     @keyframes pulse {
       0% {

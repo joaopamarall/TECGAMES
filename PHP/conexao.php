@@ -1,12 +1,12 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "login";
 
-$usuario = 'root';
-$senha = '';
-$database = 'login';
-$host = 'localhost';
+$conexao = mysqli_connect($servername, $username, $password, $dbname);
 
-$mysqli = new mysqli($host, $usuario, $senha, $database);
-
-if($mysqli->error) {
-    die("Falha ao conectar ao banco de dados: " . $mysqli->error);
+if (!$conexao) {
+    die("Falha na conexão: " . mysqli_connect_error());
 }
+?>

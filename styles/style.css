@@ -145,7 +145,7 @@ nav {
 	display: grid;
 	min-height: 100vh;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 6fr;
 	grid-template-areas:
 		'promocao'
 		'produtos';
